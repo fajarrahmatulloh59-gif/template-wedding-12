@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #F8F5EF;
+    --color-gold: #D4B779;
+    --color-gold-dark: #A98743;
+    --color-charcoal: #39342D;
+    --color-taupe: #81786D;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Subtle gold shimmer animation for buttons and ornaments */
+@keyframes shimmerGold {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-shimmer {
+  background: linear-gradient(90deg, #D4B779 0%, #F5E8C7 50%, #D4B779 100%);
+  background-size: 200% 100%;
+  animation: shimmerGold 6s infinite ease-in-out;
+}
+
+/* Custom scrollbar for guestbook and modals */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F5EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4B779;
+  border-radius: 9999px;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "Sunda Heritage - Template Undangan Pernikahan Digital",
+  "description": "Template undangan pernikahan digital adat Sunda modern, elegan, dan responsif dari RumahUndangan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
